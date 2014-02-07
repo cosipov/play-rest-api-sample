@@ -1,0 +1,14 @@
+---
+applications:
+- name: play-rest-api-sample
+  memory: 128M
+  instances: 1
+  host: play-rest-api-sample-${random-word}
+  domain: ${target-base}  
+  path: dist/playrestapisample-1.0.zip
+  services:
+    notes-db:
+      label: postgresql
+      provider: core
+      version: '9.1'
+      plan: '100'
