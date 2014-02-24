@@ -6,4 +6,4 @@ applications:
   host: play-rest-api-sample-32151
   path: dist/playrestapisample-1.0.zip
   services:
-  -notes-db
+  - notes-db
